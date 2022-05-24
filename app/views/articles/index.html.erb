@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <div class="overlay p-5">
-      <h1 class="display-4">ARTICLES ABOUT THE UKRAINE RUSSIA CONFLICT </h1>
+      <h1 class="display-4">THE UKRAINE RUSSIA CONFLICT </h1>
       <h5 class="pb-2">For people that want to understand the crisis in Ukraine</h5>
     </div>
   </div>
@@ -9,7 +9,9 @@
 
 <div class="ml-3"> Our blog has <%= Article.public_count %> articles and counting! <div>
 
-<ul>
+<%= button_to("New Article", new_article_path, :class => "btn btn-primary") %>
+<ul class="list-group">
+<ul class="list-group">
   <% @articles.each do |article| %>
     <% unless article.archived? %>
       <li>
@@ -19,4 +21,3 @@
   <% end %>
 </ul>
 
-<%= link_to "New Article", new_article_path %>
