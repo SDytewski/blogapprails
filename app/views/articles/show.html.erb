@@ -1,3 +1,6 @@
+<form>
+
+
 
 <div class="mt-3 ml-3">
   <h1><%= @article.title %></h1>
@@ -13,8 +16,12 @@
   </ul>
 
   <h2>Comments</h2>
-  <%=  render @article.comments %>
+  <%= render @article.comments %>
 
   <h2>Add a comment:</h2>
   <%= render 'comments/form' %>
 </div>
+
+
+
+</form>

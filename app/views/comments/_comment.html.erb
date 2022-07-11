@@ -1,8 +1,13 @@
 <% unless comment.archived? %>
-  <p>
+  <div class="form-group">
     <strong>Commenter:</strong>
     <%= comment.commenter %>
-  </p>
+
+
+ <div class="input-group">
+        <input class="string optional form-control" placeholder="Provider name..." autocomplete="off" type="text" id="provider-filter">
+        <i class="fa fa-search form-control-feedback provider__search-button"></i>
+ </div>
 
   <p>
     <strong>Comment:</strong>
@@ -15,4 +20,6 @@
                 turbo_confirm: "Are you sure?"
               } %>
   </p>
+
+  </div>
 <% end %>
