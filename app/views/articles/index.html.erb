@@ -7,9 +7,11 @@
   </div>
 </div>
 
-<div class="ml-3"> Our blog has <%= Article.public_count %> articles and counting! <div>
+<div class="ml-3 mb-3"> Our blog has <%= Article.public_count %> articles and counting! </div>
 
-<%= link_to("New Article", new_article_path, :method => :get, :class => "btn btn-primary") %>
+<div class="ml-4">
+
+<%= link_to("New Article", new_article_path, :method => :get, :class => "btn btn-primary mb-4") %>
 
 <ul class="list-group">
   <% @articles.each do |article| %>
@@ -20,4 +22,4 @@
     <% end %>
   <% end %>
 </ul>
-
+</div>
