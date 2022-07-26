@@ -7,19 +7,30 @@
   </div>
 </div>
 
-<div class="ml-4 mb-3"> Our blog has <%= Article.public_count %> articles and counting! </div>
+  <div class="row ml-4">
+    <div class= "col">
+      <%# <div class="mb-3"> Our blog has <%= Article.public_count %>
 
-<div class="ml-4">
- <%= link_to "Articles", root_path, class: "btn btn-primary mb-4" %>
-<%= link_to("New Article", new_article_path, :method => :get, :class => "btn btn-primary mb-4") %>
 
-<ul class="list-group">
-  <% @articles.each do |article| %>
-    <% unless article.archived? %>
-      <li>
-        <%= link_to article.title, article %>
-      </li>
-    <% end %>
-  <% end %>
-</ul>
-</div>
+    <div class="row align-items-center mb-4">
+        <div class="col-6">
+        <%= link_to "ARTICLES", root_path, class: "font-weight-bold mr-3" %>
+        <%= link_to("NEW ARTICLE", new_article_path, :method => :get, :class => "btn btn-primary") %>
+        </div>
+        </div>
+
+        <div class="col-10 pl-0">
+        <ul class="list-group">
+          <% @articles.each do |article| %>
+            <% unless article.archived? %>
+              <div class="card mb-4">
+                <%= link_to article.title, article, class: "card-header bg-white text-dark border-0 pb-1" %>
+                <div class="card-body pb-2 pt-2 text-secondary text-truncate"><%= article.body%></div>
+              </div>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
