@@ -36,8 +36,34 @@
 #logo  {
 
   font-weight: 900;
-  background: -webkit-linear-gradient(89deg, #e9e93d, #3673b4);
+  background: -webkit-linear-gradient(90deg, #ffff52, #618db9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 19px;
 }
 
+#headline {
+      font-weight: 900;
+    background: -webkit-linear-gradient(90deg, #ffff52, #95b8db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+#tagline {
+  font-weight: 900;
+background: -webkit-linear-gradient(60deg, #d6e255, #9a9ed8);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+ul {
+  list-style-type: none;
+}
