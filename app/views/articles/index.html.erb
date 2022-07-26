@@ -24,7 +24,7 @@
           <% @articles.each do |article| %>
             <% unless article.archived? %>
               <div class="card mb-4">
-                <%= link_to article.title, article, class: "card-header bg-white text-dark border-0 pb-1" %>
+                <%= link_to article.title, article, class: "card-header font-weight-bold bg-white text-dark border-0 pb-1" %>
                 <div class="card-body pb-2 pt-2 text-secondary text-truncate"><%= article.body%></div>
               </div>
             <% end %>
