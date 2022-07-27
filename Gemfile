@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
+
+#pagination
+gem 'kaminari'
