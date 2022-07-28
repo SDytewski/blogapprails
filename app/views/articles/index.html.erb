@@ -1,4 +1,4 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid" id="hero">
   <div class="container">
     <div class="overlay pb-5 pt-3 mt-3">
       <h1 id="headline" class="display-4 text-center">UKRAINE RUSSIA BLOG</h1>
@@ -30,9 +30,63 @@
             <% end %>
           <% end %>
           <%# <%= page_entries_info @articles %>
-          <%= paginate @articles %>
+          <%= paginate @articles, :class => "mb-5" %>
         </ul>
       </div>
     </div>
   </div>
+<div class="jumbotron mt-5">
+  <h4>Show Your Support</h4>
+   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Donate</a>
+  </p>
+</div>
 
+<div class = "container">
+         <h2>Card-Groups</h2>
+         <div class = "card-group">
+            <div class = "card">
+              <div class = "card-body">
+                  <h5 class = "card-title">HTML</h5>
+                  <p class = "card-text">
+                     HTML stands for Hypertext Markup Language, and it is the most
+                     widely used language to write Web Pages.
+                  </p>
+               </div>
+
+               <div class = "card-footer">
+                  <small class = "text-muted">Card Footer</small>
+               </div>
+            </div>
+
+            <div class = "card">
+               <div class = "card-body">
+                  <h5 class = "card-title">CSS</h5>
+                  <p class = "card-text">
+                     Cascading Style Sheets, fondly referred to as CSS, is a simple
+                     design language intended to simplify the process of making web
+                     pages presentable.
+                  </p>
+               </div>
+               <div class = "card-footer">
+                  <small class = "text-muted">Card Footer</small>
+               </div>
+            </div>
+
+            <div class = "card">
+              <div class = "card-body">
+                  <h5 class = "card-title">Bootstrap</h5>
+                  <p class = "card-text">
+                     Bootstrap is a sleek, intuitive, and powerful, mobile first
+                     front-end framework for faster and easier web development.
+                  </p>
+               </div>
+
+               <div class = "card-footer">
+                  <small class = "text-muted">Card Footer</small>
+               </div>
+
+            </div>
+         </div>
+      </div>
