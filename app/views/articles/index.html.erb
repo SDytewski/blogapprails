@@ -1,3 +1,4 @@
+
 <div class="jumbotron jumbotron-fluid" id="hero">
   <div class="container">
     <div class="overlay pb-5 pt-3 mt-3">
@@ -35,15 +36,16 @@
       </div>
     </div>
   </div>
-<div class="jumbotron mt-5">
+<div class="jumbotron mt-5 text-white" id="support">
   <h4>Show Your Support</h4>
-   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+   <p>Give money to the IRC which helps Ukraine refugees in Poland as well as other countries in the world.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Donate</a>
   </p>
 </div>
 
 <div class = "container">
+  <div class="row">
          <h2>Card-Groups</h2>
          <div class = "card-group">
             <div class = "card">
@@ -83,9 +85,20 @@
                   </p>
                </div>
 
-               <div class = "card-footer">
-                  <small class = "text-muted">Card Footer</small>
-               </div>
+
+
+
+
+  <% @response['results'].each do |r| %>
+    <li><%= r["webTitle"] %></li>
+  <% end %>
+
+
+
+<%# <%= @response.body %>
+
+
+
 
             </div>
          </div>

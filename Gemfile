@@ -67,3 +67,9 @@ gem 'jquery-rails'
 
 #pagination
 gem 'kaminari'
+
+gem 'httparty'
+
+gem 'figaro'
+
+gem 'json'
