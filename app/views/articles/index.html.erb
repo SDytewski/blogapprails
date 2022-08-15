@@ -86,19 +86,11 @@
                </div>
 
 
-
-
-
   <% @response['results'].each do |r| %>
-    <li><%= r["webTitle"] %></li>
+     <li> <%= r["title"] %> </li>
+    <%# <%  pp r %>
+
   <% end %>
-
-
-
-<%# <%= @response.body %>
-
-
-
 
             </div>
          </div>
