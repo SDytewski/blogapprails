@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.order(created_at: :desc).page(params[:page])
-    @response = HTTParty.get("https://newsdata.io/api/1/news?apikey=pub_97288f1a2f44a1c380a3ddcac683ad3a377f&language=en&country=us&q=ukraine")
+    @response = HTTParty.get("https://newsdata.io/api/1/news?apikey=pub_97288f1a2f44a1c380a3ddcac683ad3a377f&language=en&country=us&q=russia")
     JSON.parse(@response.body)
 
   end

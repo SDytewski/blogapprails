@@ -44,54 +44,20 @@
   </p>
 </div>
 
-<div class = "container">
+<div class = "container ml-0">
   <div class="row">
-         <h2>Card-Groups</h2>
-         <div class = "card-group">
-            <div class = "card">
-              <div class = "card-body">
-                  <h5 class = "card-title">HTML</h5>
-                  <p class = "card-text">
-                     HTML stands for Hypertext Markup Language, and it is the most
-                     widely used language to write Web Pages.
-                  </p>
-               </div>
-
-               <div class = "card-footer">
-                  <small class = "text-muted">Card Footer</small>
-               </div>
-            </div>
-
-            <div class = "card">
-               <div class = "card-body">
-                  <h5 class = "card-title">CSS</h5>
-                  <p class = "card-text">
-                     Cascading Style Sheets, fondly referred to as CSS, is a simple
-                     design language intended to simplify the process of making web
-                     pages presentable.
-                  </p>
-               </div>
-               <div class = "card-footer">
-                  <small class = "text-muted">Card Footer</small>
-               </div>
-            </div>
-
-            <div class = "card">
-              <div class = "card-body">
-                  <h5 class = "card-title">Bootstrap</h5>
-                  <p class = "card-text">
-                     Bootstrap is a sleek, intuitive, and powerful, mobile first
-                     front-end framework for faster and easier web development.
-                  </p>
-               </div>
-
-
-  <% @response['results'].each do |r| %>
-     <li> <%= r["title"] %> </li>
-    <%# <%  pp r %>
-
-  <% end %>
-
-            </div>
-         </div>
+    <% @response['results'].drop(1).first(6).each do |r| %>
+      <div class="col-lg-2">
+        <div class="card h-100">
+          <div class="card-body">
+          <h5 class="card-title"> <%= r["title"]%> </h5>
+            <p class="card-text"> <%= link_to (r["link"]) %> </p>
+          </div>
+        </div>
       </div>
+    <% end %>
+  </div>
+ </div>
+
+
+
