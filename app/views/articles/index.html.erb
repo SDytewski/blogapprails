@@ -44,10 +44,10 @@
   </p>
 </div>
 
-<div class = "container ml-0">
+<div class="flex-container ml-4 mr-4">
   <div class="row">
     <% @response['results'].drop(1).first(6).each do |r| %>
-      <div class="col-lg-2">
+      <div class="col-lg-2 mb-3">
         <div class="card h-100">
           <div class="card-body">
           <h5 class="card-title"> <%= r["title"]%> </h5>

@@ -50,7 +50,6 @@
 
 }
 
-
 #tagline {
   font-weight: 900;
 background: -webkit-linear-gradient(60deg, #d6e255, #9a9ed8);
@@ -69,4 +68,8 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+.flex-container {
+  flex-wrap: wrap;
 }
