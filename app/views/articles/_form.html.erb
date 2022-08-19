@@ -13,7 +13,7 @@
 
   <div class="col-md-6 ml-3">
     <%= form.label :body %><br>
-    <%= form.text_area :body, :class => "form-control" %><br>
+    <%= form.text_area :body, :class => "form-control", :id => "textbox" %><br>
     <% @article.errors.full_messages_for(:body).each do |message| %>
       <div><%= message %></div>
     <% end %>
