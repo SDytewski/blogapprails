@@ -20,8 +20,9 @@
   </div>
 
   <div class="col-md-6 ml-3 mb-3">
-    <%= form.label :status,  %><br>
+    <%= form.label :status%><br>
     <div class="dropdown">
+
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
     </div>
   </div>
