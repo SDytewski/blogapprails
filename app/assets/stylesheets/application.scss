@@ -22,18 +22,16 @@
     background-size: cover;
   }
 
-  body {
-    font-family: 'Oswald', sans-serif !important;
-  }
+body {
+  font-family: 'Oswald', sans-serif !important;
+}
 
 
 .overlay{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
 }
 
-
 #logo  {
-
   font-weight: 900;
   background: -webkit-linear-gradient(90deg, #ffff52, #618db9);
   -webkit-background-clip: text;
@@ -42,19 +40,17 @@
 }
 
 #headline {
-      font-weight: 900;
-    background: -webkit-linear-gradient(90deg, #ffff52, #95b8db);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+  font-weight: 900;
+  background: -webkit-linear-gradient(90deg, #ffff52, #95b8db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #tagline {
-  font-weight: 900;
+ font-weight: 900;
 background: -webkit-linear-gradient(60deg, #d6e255, #9a9ed8);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-
 }
 
 #support {
@@ -75,18 +71,23 @@ ul {
 
 #textbox {
   height: 250px;
-
 }
 
 #comment_body {
   height: 300px;
-  width: 400px;
+  width: 800px;
 }
 
 #comment_commenter {
-  width: 400px;
-
+  width: 800px;
 }
+
 #comments-add {
   background-color: #EAEAEA;
+}
+
+@media only screen and (max-width: 975px){
+  #comment_commenter, #comment_body {
+    width: 400px;
+  }
 }
