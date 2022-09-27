@@ -94,7 +94,9 @@ ul {
   min-height: 250px;
 }
 
-
+a#card-text {
+  color: black !important;
+}
 
 @media only screen and (max-width: 975px){
   #comment_commenter, #comment_body {
