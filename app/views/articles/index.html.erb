@@ -53,7 +53,10 @@
           <h5 class="card-title"> <%= r["title"]%> </h5>
             <a class="card-link text-info mt-auto text-center"> <%= link_to  'Read Article', (r["link"]), :target => '_blank' %> </a>
 
-             <img src= r['image_url'] %>
+             <%# <td><%= image_tag(roster['image_url']) %>
+             <% if r['image_url']%>
+              <%= image_tag(r['image_url']) %>
+             <% end %>
 
         </div>
           </div>
